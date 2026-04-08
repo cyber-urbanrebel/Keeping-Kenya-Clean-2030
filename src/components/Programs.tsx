@@ -28,11 +28,6 @@ function ProgramCard({ program }: { program: Program }) {
       <div className={`inline-flex items-center justify-center w-14 h-14 ${colors.bg} rounded-xl`}>
         {Icon && <Icon className={`w-7 h-7 ${colors.icon}`} />}
       </div>
-      <div>
-        <span className={`text-xs font-semibold px-2 py-1 rounded-full ${colors.badge}`}>
-          {program.title}
-        </span>
-      </div>
       <h3 className="text-xl font-bold text-green-900">{program.title}</h3>
       <p className="text-green-700 leading-relaxed text-sm flex-1">{program.description}</p>
       <a href="#volunteer" className="text-green-600 font-semibold text-sm hover:text-green-700 flex items-center gap-1 group">
